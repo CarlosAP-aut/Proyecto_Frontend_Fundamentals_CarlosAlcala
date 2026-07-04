@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D print lab</title>
+    <!-- Bootstrap 5.3 por CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Mis estilos (animaciones) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+                <!-- Logo de la pagina -->
+                <img src="img/MainLogo.svg" alt="logo" class="me-3" style="height: 50px;">
+                3D Print lab
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#impresoras">Impresoras</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <header id="inicio" class="container text-center py-5">
+        <div class="hero-contenido">
+            <h1 class="fw-bold">3D PRINT LAB</h1>
+            <p class="text-body-secondary">Imprimimos tus ideas en 3D, fácil y rápido.</p>
+            <a href="#productos" class="btn btn-primary btn-lg">Ver productos</a>
+            <!-- Placeholder de imagen del hero -->
+            <div class="ratio ratio-16x9 bg-secondary rounded mt-4">
+                <div class="d-flex justify-content-center align-items-center text-white">
+                    <img src="img/Estudio3D_MainImage.png" alt="Imagen Principal" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--PRODUCTOS-->
+    <section id="productos" class="container py-5">
+        <h2 class="text-center mb-4">Productos</h2>
+        <div class="row row-cols-2 row-cols-lg-4 g-3">
+            <!-- Tarjeta de producto (se repite) -->
+            <div class="col">
+                <div class="card producto h-100">
+                    <div class="card-img-top bg-secondary d-flex justify-content-center align-items-center text-white" style="height: 140px;">
+                        <img src="img/product1.jpeg" alt="Producto 1" class="card-img-top object-fit-cover rounded" style="height: 160px">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Producto 1</h5>
+                        <p class="fw-bold mb-2">$150</p>
+                        <button class="btn btn-primary btn-sm">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto h-100">
+                    <div class="card-img-top bg-secondary d-flex justify-content-center align-items-center text-white" style="height: 140px;">
+                        <img src="img/producto2.jpg" alt="Producto 2" class="card-img-top object-fit-cover rounded" style="height: 160px">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Producto 2</h5>
+                        <p class="fw-bold mb-2">$200</p>
+                        <button class="btn btn-primary btn-sm">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto h-100">
+                    <div class="card-img-top bg-secondary d-flex justify-content-center align-items-center text-white" style="height: 140px;">
+                        <img src="img/Producto3.webp" alt="Producto 3" class="card-img-top object-fit-cover rounded" style="height: 160px">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Producto 3</h5>
+                        <p class="fw-bold mb-2">$120</p>
+                        <button class="btn btn-primary btn-sm">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card producto h-100">
+                    <div class="card-img-top bg-secondary d-flex justify-content-center align-items-center text-white" style="height: 140px;">
+                        <img src="img/producto4.jpg" alt="Producto 4" class="card-img-top object-fit-cover rounded" style="height: 160px">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Producto 4</h5>
+                        <p class="fw-bold mb-2">$300</p>
+                        <button class="btn btn-primary btn-sm">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CATEGORIAS-->
+    <section id="categorias" class="container py-5">
+        <h2 class="text-center mb-4">Categorías</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-3 text-center">
+            <div class="col">
+                <div class="card categorias h-100">
+                    <div class="card-img-top bg-secondary d-flex justify-content-center align-items-center text-white" style="height: 140px;">
+                        <img src="img/Prototipado.webp" alt="Producto 3" class="card-img-top object-fit-cover rounded" style="height: 160px">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Prototipado</h5>
+                        <button class="btn btn-primary btn-lg">Ver</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card categorias h-100">
+                    <div class="card-img-top bg-secondary d-flex justify-content-center align-items-center text-white" style="height: 140px;">
+                        <img src="img/Deco.webp" alt="Producto 3" class="card-img-top object-fit-cover rounded" style="height: 160px">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Decoración</h5>
+                        <button class="btn btn-primary btn-lg">Ver</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card categorias h-100">
+                    <div class="card-img-top bg-secondary d-flex justify-content-center align-items-center text-white" style="height: 140px;">
+                        <img src="img/Repuestos.png" alt="Producto 3" class="card-img-top object-fit-cover rounded" style="height: 160px">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Repuestos</h5>
+                        <button class="btn btn-primary btn-lg">Ver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--IMPRESORAS - PROXIMAMENTE-->
+    <section id="impresoras" class="bg-light text-center py-5">
+        <div class="container">
+            <h2 class="mb-3">Impresoras</h2>
+            <span class="badge bg-primary fs-4 proximamente">Próximamente...</span>
+            <p class="text-body-secondary mt-3">Muy pronto venderemos impresoras 3D en nuestra tienda.</p>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="bg-dark text-light text-center py-4">
+        <p class="mb-1">© 2026 Impresiones 3D - Carlos Alcalá</p>
+        <a href="#inicio" class="text-light">Volver arriba</a>
+    </footer>
+
+    <!-- Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

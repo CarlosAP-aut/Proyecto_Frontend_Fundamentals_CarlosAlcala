@@ -1,0 +1,7 @@
+# Visual Studio (autogenerado, específico de la máquina)
+.vs/
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
